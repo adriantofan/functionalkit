@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47230558103D02BF005CE8EA /* PLBlocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47230557103D02BF005CE8EA /* PLBlocks.framework */; };
-		47230559103D02BF005CE8EA /* PLBlocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47230557103D02BF005CE8EA /* PLBlocks.framework */; };
 		47AED0E7103CD4680087681D /* FKBlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CD5602103CCE2000E69A25 /* FKBlocksTests.m */; };
 		47AED1B7103CE1A60087681D /* FKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AED1B6103CE1A60087681D /* FKBlocks.m */; };
 		47AED1B8103CE1A60087681D /* FKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AED1B6103CE1A60087681D /* FKBlocks.m */; };
@@ -168,7 +166,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23DBF6D0F4E2817005C8EDA /* UIKit.framework in Frameworks */,
-				47230559103D02BF005CE8EA /* PLBlocks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +175,6 @@
 			files = (
 				E23DBF6E0F4E2817005C8EDA /* UIKit.framework in Frameworks */,
 				E23DC0050F4E2852005C8EDA /* Foundation.framework in Frameworks */,
-				47230558103D02BF005CE8EA /* PLBlocks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +461,11 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "functionalkit" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* functionalkit */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
@@ -587,6 +587,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = functionalkit;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -608,6 +609,7 @@
 					"\"$(SRCROOT)/Source/External/google-toolbox-for-mac-1-5-1/TigerGcov\"",
 				);
 				PRODUCT_NAME = functionalkit;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -617,17 +619,17 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = coop.plausible.blocks.compilers.gcc.4_2;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = Source/Main;
-				IPHONEOS_DEPLOYMENT_TARGET = 2.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-fnested-functions";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -636,14 +638,14 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = coop.plausible.blocks.compilers.gcc.4_2;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = Source/Main;
-				IPHONEOS_DEPLOYMENT_TARGET = 2.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
